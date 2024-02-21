@@ -1,12 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -15,9 +8,9 @@ export default {
     "./app.vue",
     "./error.vue",
   ],
+  css: ["~/assets/scss/main.scss"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
-
+};
